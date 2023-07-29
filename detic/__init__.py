@@ -1,4 +1,7 @@
 # Copyright (c) Facebook, Inc. and its affiliates.
+import sys
+import os
+sys.path.insert(0, f'{os.path.dirname(__file__)}/../third_party/CenterNet2/')
 from .modeling.meta_arch import custom_rcnn
 from .modeling.roi_heads import detic_roi_heads
 from .modeling.roi_heads import res5_roi_heads
